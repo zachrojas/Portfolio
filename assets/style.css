@@ -1,0 +1,139 @@
+:root {
+  --textcolor: rgb(0, 0, 0);
+  --bgcolor0: #858585;
+  --bgcolor1: #004445;
+  --bgcolor2: #2c7873;
+  --bgcolor3: #6fb98f;
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background: var(--bgcolor0);
+  }
+
+  /* Navigation */
+  
+  header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--bgcolor2);
+    color:var(--textcolor);
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 30px;
+  }
+    
+  nav a {
+    color:var(--textcolor);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover {
+    color:var(--bgcolor3);
+  }
+
+  /* About Me */
+
+  intro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px; 
+    color:var(--textcolor);
+  }
+
+  intro img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    width: 75%;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio Cards, Footer */
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    font-size: 150%;
+    margin-bottom: 10px;
+  }
+
+  .card {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50px;
+  padding: 10px;
+  flex: 0 0 300px;
+  margin: 20px;
+  }
+
+  .card:hover {
+    color: var(--bgcolor3);
+    border-width: 3px;
+    text-size-adjust: 150%;
+  }
+
+  #social img {
+    opacity: 50%;
+  }
+  #social:hover img {
+    opacity:100%;
+    transform: scale(1.1);  
+  }
+
+  @media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    header {
+      width: 50%;
+    }
+    nav ul {
+      width: 100%;
+    }
+    nav a {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    header {
+      width: 100%;
+    }
+    nav ul {
+      width: 100%;
+    }
+    nav a {
+      width: 100%;
+    }
+  }
