@@ -1,9 +1,23 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 :root {
   --textcolor: rgb(0, 0, 0);
-  --bgcolor0: #858585;
+  --bgcolor0: #E5E5E5;
   --bgcolor1: #004445;
-  --bgcolor2: #2c7873;
-  --bgcolor3: #6fb98f;
+  --bgcolor2: #5177ca;
+  --bgcolor3: #FCA311;
 }
 
   html {
@@ -25,7 +39,7 @@
     align-items: center;
     padding: 1%;
     background-color: var(--bgcolor2);
-    color: var(--textcolor);
+    color:var(--textcolor);
     flex-direction: column;
   }
 
@@ -35,6 +49,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     min-width: 30px;
+  }
+
+  nav li {
+    padding-inline: 10px;
+    justify-content: space-between;
   }
     
   nav a {
@@ -62,9 +81,12 @@
     max-height: 200px;
     object-fit: cover;
     width: 75%;
+    padding: 10px;
     position: relative;
     flex-wrap: wrap;
+    float: left;
   }
+
 
   h1 {
     font-size: 2.5rem;
@@ -87,8 +109,8 @@
 
   .card {
   border-style: solid;
-  border-width: 2px;
-  border-radius: 50px;
+  border-width: 3px;
+  border-radius: 60px;
   padding: 10px;
   flex: 0 0 300px;
   margin: 20px;
@@ -97,15 +119,13 @@
   .card:hover {
     color: var(--bgcolor3);
     border-width: 3px;
-    text-size-adjust: 150%;
   }
 
   #social img {
     opacity: 50%;
   }
   #social:hover img {
-    opacity:100%;
-    transform: scale(1.1);  
+    opacity:100%;  
   }
 
   @media screen and (max-width: 992px) {
