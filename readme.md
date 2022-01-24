@@ -1,29 +1,11 @@
-# Portfolio
+# Zach Rojas's Portfolio
 
-This is my work in progress portfolio page! it has working links to existing projects along with links to contact info.
+This is my portfolio made with old school html and css.
 
-There is a temporary placeholder link to my resume that leads to a blank word doc as well as my CSS Snippet project which leads to an empty repository on my github page. Will update these links once completed.
+# Installation
 
------Changes to index.html----
+You can clone the repository if you like the design and would like to use it as a template.
 
-added page title name
+# Credits
 
-added alt tags to images
-
-added comments to better reference certain sections of the code
-
-added a more personal about me
-
-added resized image links for contact section
-
-----Changes in style.css----
-
-added media screen for more responsiveness
-
-added comments to better reference certain sections
-
-added hover and size adjust
-
-added opacity
-
-----Added a reset.css file----
+Made by Zach Rojas
